@@ -1,0 +1,204 @@
+:root{
+    /* text */
+
+    --main-font: 'Cormorant Garamond', serif;
+    /* 300-700 */
+    --text-font:'Noto Serif', serif;
+    /* 400/700 */
+
+    --text-color:black;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+margin: 0 auto;
+padding: 0 15;
+width: 1024px;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size:medium;
+  
+
+    width: 100%;
+padding-top: 10px;   
+
+}
+
+.header__li{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+/* margin-top: 20px; */
+    width: 100px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__li:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.main{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    /* background:url(./images/dr.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    justify-content: center;
+
+    
+}
+
+.main__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+ 
+}
+
+
+.main__text{
+
+    font-family: var(--main-font);
+    color: var(--text-color);
+    
+    font-size: 3em;
+    line-height:1em;
+    letter-spacing:normal;
+    text-decoration:none ;
+    text-transform:uppercase;
+
+text-align: center;
+
+
+/* background-color: white; */
+
+
+}
+
+
+.main__text-second{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size:small;
+    line-height:normal;
+    letter-spacing:normal;
+    text-decoration:none ;
+    text-transform:none;
+text-align: center;
+
+}
+
+.about{
+    display: flex;
+
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about__photo {
+    display: block;
+    border-radius: 15px;
+    
+    margin-left: 150px
+;
+ 
+width: 200px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.about__photo:hover{
+    
+     transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+
+}
+
+.about__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    margin: 0 150px 0 35px;
+}
+.about__text-main {
+    font-family: var(--main-font);
+    font-size: 1.3em;
+    /* font-weight: 500; */
+}
+.about__text {
+    font-family: var(--text-font);
+    font-size:smaller;
+    text-align: justify;
+    line-height: normal;
+}
+
