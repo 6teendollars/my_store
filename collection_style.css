@@ -1,0 +1,262 @@
+:root {
+    /* text */
+
+    --main-font: 'Cormorant Garamond', serif;
+    /* 300-700 */
+    --text-font: 'Noto Serif', serif;
+    /* 400/700 */
+
+    --text-color: black;
+    --hover-color: rgb(120, 115, 115);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1024px;
+}
+
+/* COLLECTION_PAGE */
+
+.collection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+  justify-content: center;
+
+
+}
+
+
+.collections__cards {
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+
+
+ 
+}
+
+.collection__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+border-radius: 25px;
+background-color: rgba(215, 215, 215, 0.228);
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+.collection__list:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+
+}
+.collections__photo {
+   
+    display: block;
+    border-radius: 15px ;
+    width: 300px;
+    height: 300px;
+    border: none;
+
+    object-fit: cover;
+background-image: url(https://i.pinimg.com/564x/56/20/db/5620dbff51053c5ad875afe303453780.jpg);
+background-repeat: no-repeat ;
+
+transition: all 0.3s ease-in-out;
+
+cursor: pointer;
+
+}
+
+.collections__photo:hover{
+    background-image: url(https://i.pinimg.com/564x/56/20/db/5620dbff51053c5ad875afe303453780.jpg);
+    width: 300px;
+    background-position: center;
+  
+
+}
+.collections__text {
+    font-family: var(--main-font);
+    margin: 10px 0;
+}
+.collections__button {
+    font-family: var(--text-font);
+    display: flex;
+    margin: 0 auto;
+    color: white;
+    background-color: rgba(179, 179, 179, 0.67);
+
+    border: none;
+    border-radius: 4px;
+    width: 90px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+   
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+.collections__button:focus,
+.collections__button:hover {
+    background-color: rgb(90, 178, 255);
+    /* color:#4671D5; */
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+
+}

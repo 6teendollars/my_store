@@ -102,6 +102,8 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-decoration:none;
+    color: unset;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -149,6 +151,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
 
 .container {
     margin: 0 auto;
@@ -346,6 +350,7 @@ padding-right: 25px; */
 
 .product__text {
     font-family: var(--main-font);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
 
@@ -547,3 +552,7 @@ padding-right: 25px; */
     text-align: center;
     padding-top: 20px;
 }
+
+
+
+
